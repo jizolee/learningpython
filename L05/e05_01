@@ -1,0 +1,21 @@
+
+def readnumber():
+    ftotal=0
+    fcount=0
+    while True:
+        number=input("Enter number: ")
+        if number=="done":
+            break
+        else:
+            try:
+                fnumber=float(number)
+                ftotal+=fnumber
+                fcount+=1
+            except:
+                print("Invalid input")
+                continue
+    print("Total:",ftotal)
+    print("Count:",fcount)
+    print("Average:",ftotal/fcount)
+
+readnumber()
