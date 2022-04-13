@@ -1,0 +1,19 @@
+def readnumber():
+    fmax=None
+    fmin=None
+    while True:
+        number=input("Enter number: ")
+        if number=="done":
+            break
+        else:
+            try:
+                fnumber=float(number)
+            except:
+                print("Invalid input")
+                continue
+            if fmax is None or fnumber>fmax: fmax=fnumber
+            if fmin is None or fnumber<fmin: fmin=fnumber
+    print("Max:",fmax)
+    print("Min:",fmin)
+
+readnumber()
