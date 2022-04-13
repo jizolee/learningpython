@@ -16,6 +16,6 @@ def readnumber():
                 continue
     print("Total:",ftotal)
     print("Count:",fcount)
-    print("Average:",ftotal/fcount)
+    print("Average:",round(ftotal/fcount,2))
 
 readnumber()
