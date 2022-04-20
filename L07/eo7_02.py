@@ -9,7 +9,8 @@ icount=0
 for line in fhanle:
     #print(line.find("X-DSPAM-Confidence:"))
     if line.startswith("X-DSPAM-Confidence:")== True:
-        fsum+=float(line[-7:])
+        x=line.find(":")
+        fsum+=float(line[x+1:])
         icount+=1
 print("Average:",fsum/icount)
 
