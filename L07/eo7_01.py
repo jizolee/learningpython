@@ -5,4 +5,5 @@ except:
     print("File not exist")
     exit()
 for line in fhanle:
+    line=line.rstrip()
     print(line.upper())
