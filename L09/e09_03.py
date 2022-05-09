@@ -13,8 +13,8 @@ except Exception as e:
 count=dict()
 for line in mail:
     word=line.split()
-    if len(word)==0 or word[0]!='From': continue
-    count[word[1].split("@")[1]]=count.get(word[1].split("@")[1],0)  +1                          #split email adress to sender and domain.
+    if len(word) == 0 or word[0]!='From': continue
+    count[word[1]] = count.get(word[1],0) + 1
 
+#print result:
 print(count)
-
